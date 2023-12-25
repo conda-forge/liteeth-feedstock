@@ -1,6 +1,6 @@
 {% set name = "liteeth" %}
-{% set version = "2023.08" %}
-{% set sha256 = "c04691ea103e35fc3ddbc0e1227a68df6da5a35561875cd3ea647e01bea23758" %}
+{% set version = "2023.12" %}
+{% set sha256 = "71a6bff7e1e956f107fea6594b1031d6a0c7f2594c74c1ad5e07e3482a8ac6cf" %}
 
 package:
   name: {{ name|lower }}
