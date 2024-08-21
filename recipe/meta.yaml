@@ -24,8 +24,8 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - litex >=2023.08
-    - liteiclink
+    - litex >=2024.04
+    - liteiclink >=2024.04
     - packaging
     - pyyaml
 
