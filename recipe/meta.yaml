@@ -1,6 +1,6 @@
 {% set name = "liteeth" %}
-{% set version = "2024.08" %}
-{% set sha256 = "c1c2baca29c3a617c68368c71329c6a562ddbaeaca7eb99b983d7894c10fdae8" %}
+{% set version = "2024.12" %}
+{% set sha256 = "9b8b9430c3292535e7905ec9d54c82ad21c261bb52459785b864fef8c1c87f47" %}
 
 package:
   name: {{ name|lower }}
@@ -20,11 +20,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - litex ~={{ version }}*
     - liteiclink ~={{ version }}*
     - packaging
@@ -33,6 +33,8 @@ requirements:
 test:
   imports:
     - liteeth
+  requires:
+    - python {{ python_min }}
   commands:
     - liteeth_gen --help
 
