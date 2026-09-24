@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: liteeth
-  version: "2026.04"
-  sha256: 4a2ef0bc04c55698da6c9dd73bcefdab5a3422df9692ddb6f106de5e50b0c614
+  version: "2026.08"
+  sha256: 94d03c07c00e20cbbf19dec76d0777a98ba023398807660b3476a49b5191a258
 
 package:
   name: ${{ name|lower }}
@@ -14,7 +14,7 @@ source:
   sha256: ${{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-build-isolation --no-deps
   python:
